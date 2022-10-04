@@ -1,3 +1,20 @@
 {
-  "extends": "astro/tsconfigs/strictest"
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "types": [
+      "@astrojs/image/client"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/images/*": [
+        "src/images/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/layouts/*": [
+        "src/layouts/*"
+      ]
+    }
+  }
 }

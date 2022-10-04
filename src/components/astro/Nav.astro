@@ -1,0 +1,16 @@
+---
+const navItems = ['Interiors', 'Shop', 'Contact', 'Studio', 'Instagram'];
+---
+
+<nav>
+  <ul
+    class={'grid grid-cols-5 max-w-screen-lg justify-content-center mx-auto text-2xl my-4 uppercase font-thin text-gray-400 cursor-pointer text-center'}>
+    {
+      navItems.map((item, index) => (
+        <li class='transition-all hover:text-gray-700 hover:font-extrabold'>
+          {item}
+        </li>
+      ))
+    }
+  </ul>
+</nav>
