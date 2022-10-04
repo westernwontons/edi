@@ -5,12 +5,11 @@ import Tile3 from '@/images/tiles/_3.jpg';
 import Tile4 from '@/images/tiles/_4.jpg';
 
 import { Image } from '@astrojs/image/components';
+
+const tiles = [Tile1, Tile2, Tile3, Tile4];
 ---
 
-<iframe
-  width='90%'
-  height='500px'
-  allowfullscreen='true'
-  allow='accelerometer; magnetometer; gyroscope'
-  style='display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);'
-  src='https://panoraven.com/en/embed/6t4HvLqoRI'></iframe>
+<section>
+  <!-- {tiles.map(tile => <Image src={tile} alt='' height={420} />)} -->
+  <Image src={Tile1} alt='' height={420} width={420} />
+</section>
